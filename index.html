@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.10.0/dist/pdf-lib.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="favicon/logo/favicon-32x32.png">
+        <title>Dashboard - CertiVista</title>
+</head>
+
+<body>
+        <img src="favicon/mainlogo.png">
+        <div class="container">
+                <div class="form__group field">
+                        <input type="text" class="form__field" placeholder="Name" required="" id="name">
+                        <label for="name" class="form__label">Name</label>
+                </div>
+                <div class="dual">
+                        <div class="form__group field">
+                                <input type="date" class="form__field" placeholder="Joining Date" required="" id="jdate">
+                                <label for="name" class="form__label">Joining Date</label>
+                        </div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                        <div class="form__group field">
+                                <input type="date" class="form__field" placeholder="Joining Date" required="" id="edate">
+                                <label for="name" class="form__label">End Date</label>
+                        </div>
+                </div>
+                <div class="form__group field">
+                        <input type="input" class="form__field" placeholder="Name" required="" id="role">
+                        <label for="name" class="form__label">Role</label>
+                </div>
+                <div class="dual">
+                        <div class="form__group field">
+                                <input type="text" class="form__field" placeholder="Joining Date" required="" id="duration">
+                                <label for="name" class="form__label">Duration(in months)</label>
+                        </div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="form__group field">
+                                <input type="date" class="form__field" placeholder="Joining Date" required="" id="cdate">
+                                <label for="name" class="form__label">Certification Date </label>
+                        </div>
+                </div>
+                <div class="dual">
+                        <div class="form__group field">
+                                <label for="name" class="form__label">Gender</label>
+                                <div class="mydict">
+                                        <div>
+                                                <label>
+                                                        <input type="radio" name="radio">
+                                                        <span>Male</span>
+                                                </label>
+                                                <label>
+                                                        <input type="radio" name="radio">
+                                                        <span>Female</span>
+                                                </label>
+                                        </div>
+                                </div>
+
+
+                        </div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="form__group field">
+                                <label for="name" class="form__label">Select Documents </label>
+                                <div class="customCheckBoxHolder">
+
+                                        <input class="customCheckBoxInput" id="cCB1" type="checkbox">
+                                        <label class="customCheckBoxWrapper" for="cCB1">
+                                                <div class="customCheckBox">
+                                                        <div class="inner">Certificate</div>
+                                                </div>
+                                        </label>
+                                        <input class="customCheckBoxInput" id="cCB2" type="checkbox">
+                                        <label class="customCheckBoxWrapper" for="cCB2">
+                                                <div class="customCheckBox">
+                                                        <div class="inner">LoR</div>
+                                                </div>
+                                        </label>
+                                </div>
+                        </div>
+                </div>
+                <button id="get-doc-btn">
+                        <span class="transition"></span>
+                        <span class="gradient"></span>
+                        <span class="label">Get Documents</span>
+                </button>
+                
+        </div>
+        <div class="notification">
+                <span id="notificationMessage"></span>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>

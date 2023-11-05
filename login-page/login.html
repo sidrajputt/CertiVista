@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="login.css">
+        <link rel="icon" href="../favicon/logo/favicon-32x32.png">
+        <title>Login - CertiVista</title>
+</head>
+
+<body>
+        <div class="container">
+                <img src="../favicon/mainlogo.png">
+                <div class="login-box">
+
+                        <form>
+                                <div class="user-box">
+                                        <input id="username" type="text" name="" required="">
+                                        <label>Username</label>
+                                </div>
+                                <div class="user-box">
+                                        <input id="password" type="password" name="" required="">
+                                        <label>Password</label>
+                                </div>
+                                <p id="error" style="color: red;"></p>
+                                <a onclick="validateLogin()" class="login-btn">
+                                        login
+                                        <span></span>
+                                </a>
+
+                        </form>
+                </div>
+        </div>
+        <script src="login.js"></script>
+</body>
+
+</html>
